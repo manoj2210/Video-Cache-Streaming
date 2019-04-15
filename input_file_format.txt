@@ -1,0 +1,14 @@
+1. no. of videos in data server
+2. no. of end users
+3. no. of cache servers
+4. lattency of : each cache j from user i
+	(i * j lattencies)
+5. initial memory available in each cache server (separated by space)
+6. memory required by each video (separated by space)
+7. lattency of : each endUser from DataServer
+8. total no. of requests
+9. 2D array representing :
+	# each row represents a request.
+	# column 1 : video requested by user ___
+	  column 2 : which video is requested
+	  column 3 : how many times that video is requested by that user
