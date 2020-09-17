@@ -1,20 +1,26 @@
 #include"LinkedList.cpp"
+#include"Readfromfile.cpp"
 
-class DataServer {          /*Class contains the tree construction*/
+class DataServer {                          /*Class contains the tree construction*/
 
-protected:
-    NodeDataServer *Root;   /* Data Server Node*/
+private:
+    Read_from_File Input;
+
+protected:    
+    NodeDataServer *Root;            /* Data Server Node*/
     int Numberofvideos;             /*Number of inputs*/
     int Numberofusers;
     int Numberofcacheservers;
 
-    LinkedList List;        /*Videos Pointer Created for number of Videos depends on UI*/
+    LinkedList *list;
+
 
 public:
-    DataServer (int Numberofvideos,int Numberofusers,int Numberofcacheservers);
+    DataServer ();
     void createTreeStructure();         /*Allocates Memory*/
     void temp();
     void sortLattencyUser();
+    void constructLinkedList();
 };
 
 
