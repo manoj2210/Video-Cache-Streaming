@@ -5,7 +5,6 @@
 struct Video
 {
     int Size;
-    std::string videoName;
     int id;
 };
 
@@ -51,6 +50,7 @@ struct LinkedListNode{
     
     int Videoid;
     int Memory;
+    int Sumofrequests;
     UserRequests *Users;
     struct LinkedListNode *link; 
     int NumberofUsersofthisVideo;
