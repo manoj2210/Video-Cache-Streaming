@@ -8,9 +8,9 @@ public:
     LinkedListNode * Start;
     LinkedListNode *ptr;
 
-    LinkedList(int Videoid,int Memory,UserRequests *Users);   
+    LinkedList(int Videoid,int Memory,UserRequests *Users,int,int);   
 
-    void insertNode(int Videoid,int Memory,UserRequests *Users);
+    void insertNode(int Videoid,int Memory,UserRequests *Users,int,int);
     void Display(); 
-    // void CalculateWeight();
+    int Sizeofll();
 };
